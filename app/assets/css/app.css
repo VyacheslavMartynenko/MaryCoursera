@@ -26,6 +26,20 @@ body {
     background: url("../img/bg.jpg") repeat;
 }
 
-.carousel img {
-    width: 100%;
+.custom-carousel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content {
+    background: #FFFFFF;
+}
+
+article {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+h4 {
+    text-align: center;
 }
