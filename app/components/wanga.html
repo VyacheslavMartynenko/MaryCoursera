@@ -8,7 +8,7 @@
             </p>
 
             <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" target="_self" data-toggle="tab" href="#wanga-r" role="tab"
                        aria-controls="wanga-r">Wanga-R</a>
                 </li>
@@ -260,8 +260,32 @@
     </div>
 
     <script>
+        var position = 1;
+        var tabsWrapper = $('#myTab');
+
+        var tabChange = function () {
+            var tabs = tabsWrapper.find('> li:nth-child(' + position + ')');
+            tabs.find('a').tab('show');
+            if (position < tabsWrapper.find('> li').length) {
+                position++;
+            } else {
+                position = 1;
+            }
+        };
+
+        tabChange();
+        var tabCycle = setInterval(tabChange, 5000);
+
         $(function () {
-            $('#myTab').find('a:first').tab('show')
-        })
+            $('.nav-tabs a').click(function (e) {
+                e.preventDefault();
+                clearInterval(tabCycle);
+                $(this).tab('show');
+                setTimeout(function () {
+                    tabCycle = setInterval(tabChange, 5000)
+                }, 30000);
+            });
+        });
+
     </script>
 </div>
