@@ -27,6 +27,13 @@ body {
     font-family: "Helvetica Neue", serif;
 }
 
+header {
+    background: url("../img/right_background.png") right fixed no-repeat,
+    url("../img/left_background.jpg") left fixed no-repeat;
+    background-size: cover, cover;
+    height: 400px;
+}
+
 .custom-carousel {
     margin-top: 10px;
     margin-bottom: 10px;
