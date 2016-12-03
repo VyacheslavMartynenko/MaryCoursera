@@ -1,22 +1,37 @@
 @media (max-width: 768px) {
-    header {
-        background: url("../img/left_background.jpg") center fixed no-repeat;
+    body header {
+        background: url("../img/left_background.png") center fixed no-repeat;
         background-size: cover;
         height: 400px;
     }
+
+    #books {
+        display: none;
+    }
 }
+
 @media (min-width: 768px) {
-    header {
+    body header {
         background: url("../img/right_background.png") right fixed no-repeat,
-        url("../img/left_background.jpg") left fixed no-repeat;
+        url("../img/left_background.png") left fixed no-repeat;
         background-size: cover, cover;
         height: 400px;
+    }
+
+    #books {
+        opacity: 0;
+        height: 300px;
+        width: 100px;
+        display: block;
+        float: right;
+        margin-top: 20px;
+        margin-right: -5000px;
     }
 }
 
 body {
-    background: url("../img/bg.jpg") repeat;
     font-family: "Helvetica Neue", serif;
+    overflow-x: hidden;
 }
 
 .custom-carousel {
@@ -30,6 +45,10 @@ body {
 
 .content {
     background: #FFFFFF;
+}
+
+.full-content {
+    background: url("../img/bg.jpg") repeat;
 }
 
 .tab-pane {
