@@ -262,8 +262,10 @@
     <script>
         var position = 1;
         var tabsWrapper = $('#myTab');
+        var tabContent = $('.tab-content');
 
         var tabChange = function () {
+            tabContent.css({ opacity: 0 });
             var tabs = tabsWrapper.find('> li:nth-child(' + position + ')');
             tabs.find('a').tab('show');
             if (position < tabsWrapper.find('> li').length) {
@@ -271,6 +273,7 @@
             } else {
                 position = 1;
             }
+            tabContent.animate({ opacity: 1 }, 500);
         };
 
         tabChange();
@@ -278,12 +281,11 @@
 
         $(function () {
             $('.nav-tabs a').click(function (e) {
+                tabContent.css({ opacity: 0 });
                 e.preventDefault();
                 clearInterval(tabCycle);
                 $(this).tab('show');
-                setTimeout(function () {
-                    tabCycle = setInterval(tabChange, 5000)
-                }, 30000);
+                tabContent.animate({ opacity: 1 }, 500);
             });
         });
 
