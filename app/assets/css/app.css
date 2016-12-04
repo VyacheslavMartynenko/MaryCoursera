@@ -127,13 +127,25 @@ article {
 .tab-pane {
     margin-top: 10px;
 }
+
 .tab-pane span {
     margin-top: 10px;
     font-size: 20px;
     font-style: italic;
 }
 
-
 .nav-tabs .nav-item a {
     color: grey;
+}
+
+.nav-tabs .nav-item a:hover {
+    color: #b2bb47;
+}
+
+.nav-tabs .nav-item a.active:hover {
+    color: #b2bb47;
+}
+
+.nav-tabs .nav-item a.active {
+    color: green;
 }

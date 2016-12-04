@@ -42,6 +42,8 @@ var drawChart = function (data) {
     });
 };
 
+var tab = $('#myTab');
+tab.find('> li:nth-child(' + 1 + ')').find('a').tab('show');
 drawChart([90, 85, 70, 65, 60, 55, 20]);
 
 $(function () {
