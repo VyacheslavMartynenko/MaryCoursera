@@ -8,6 +8,13 @@
     #books {
         display: none;
     }
+
+    .carousel-text {
+        padding-top: 10px;
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+    }
 }
 
 @media (min-width: 768px) {
@@ -27,6 +34,13 @@
         margin-top: 20px;
         margin-right: -200px;
     }
+
+    .carousel-text {
+        padding-top: 120px;
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+    }
 }
 
 body {
@@ -41,6 +55,19 @@ h2 {
     font-weight: bold;
     color: green;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+h4, h5 {
+    text-align: center;
+}
+
+article {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.carousel-wrapper {
+    background: #84c384;
 }
 
 .custom-carousel {
@@ -66,13 +93,4 @@ h2 {
 
 .nav-tabs .nav-item a {
     color: grey;
-}
-
-article {
-    text-align: justify;
-    margin-top: 10px;
-}
-
-h4, h5 {
-    text-align: center;
 }
