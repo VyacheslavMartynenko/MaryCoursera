@@ -35,4 +35,8 @@ $(function () {
     $('.navbar a').click(function (e) {
         clearInterval(tabCycle);
     });
+
+    $('.links-wrapper a').click(function (e) {
+        clearInterval(tabCycle);
+    });
 });
