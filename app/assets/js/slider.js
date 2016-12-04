@@ -31,4 +31,9 @@ $(function () {
         link.animate({ opacity: 1 }, 500);
         tabContent.animate({ opacity: 1 }, 500);
     });
+
+    $(document).click(function (e) {
+        e.preventDefault();
+        clearInterval(tabCycle);
+    });
 });
