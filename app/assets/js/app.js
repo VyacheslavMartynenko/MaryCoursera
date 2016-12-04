@@ -11,6 +11,9 @@ app.config(function ($routeProvider) {
         .when("/zet", {
             templateUrl: "components/zet.html"
         })
+        .when("/analyze", {
+            templateUrl: "components/analyze.html"
+        })
         .otherwise({
             templateUrl: "components/main.html"
         });
