@@ -100,6 +100,12 @@ article {
     background-color: green;
 }
 
+.nav-link img {
+    width:60px;
+    height:60px;
+    display: block;
+}
+
 .custom-carousel {
     margin-top: 10px;
     margin-bottom: 10px;
