@@ -75,8 +75,9 @@ article {
 }
 
 .main-content {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    padding-left: 20px;
 }
 
 .content {
