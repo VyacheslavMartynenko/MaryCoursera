@@ -86,7 +86,7 @@ article {
 .links-wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
-    width: 170px;
+    width: 220px;
 }
 
 .links-wrapper a:link, .links-wrapper a:visited {
@@ -95,7 +95,7 @@ article {
     border: 2px solid white;
     border-radius: 25px;
     padding: 10px 15px;
-    width:80px;
+    width:100px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
