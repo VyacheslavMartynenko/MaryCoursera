@@ -127,6 +127,11 @@ article {
 .tab-pane {
     margin-top: 10px;
 }
+.tab-pane span {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
 
 .nav-tabs .nav-item a {
     color: grey;
