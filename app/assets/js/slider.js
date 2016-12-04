@@ -32,8 +32,7 @@ $(function () {
         tabContent.animate({ opacity: 1 }, 500);
     });
 
-    $(document).click(function (e) {
-        e.preventDefault();
+    $('.navbar a').click(function (e) {
         clearInterval(tabCycle);
     });
 });
