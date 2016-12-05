@@ -1,6 +1,10 @@
 var ctx = document.getElementById("myChart");
+var chart = null;
 var drawChart = function (data) {
-    new Chart(ctx, {
+    if (chart != null) {
+        chart.destroy();
+    }
+    chart = new Chart(ctx, {
         type: 'line',
         data: {
             labels: ["1", "2", "3", "5", "8", "10", "15"],
@@ -40,6 +44,7 @@ var drawChart = function (data) {
             }
         }
     });
+
 };
 
 var tab = $('#myTab');
