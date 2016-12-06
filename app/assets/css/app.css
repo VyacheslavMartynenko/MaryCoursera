@@ -2,7 +2,7 @@
     body header {
         background: url("../img/left_background.png") center no-repeat;
         background-size: cover;
-        height: 400px;
+        height: 600px;
     }
 
     #books {
@@ -22,13 +22,13 @@
         background: url("../img/right_background.png") right no-repeat,
         url("../img/left_background.png") left no-repeat;
         background-size: cover, cover;
-        height: 400px;
+        height: 600px;
     }
 
     #books {
         opacity: 0;
-        height: 360px;
-        width: 180px;
+        height: 560px;
+        width: 360px;
         display: block;
         float: right;
         margin-top: 20px;
@@ -51,7 +51,7 @@ body {
 
 h2 {
     padding-left: 20px;
-    padding-top: 160px;
+    padding-top: 260px;
     font-style: italic;
     font-weight: bold;
     color: green;
@@ -69,6 +69,10 @@ article {
 
 .green-content {
     background: #b2bb47;
+}
+
+.white-content {
+    background: white;
 }
 
 .main-content {
