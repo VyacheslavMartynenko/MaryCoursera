@@ -44,6 +44,7 @@
 }
 
 body {
+    background: url("../img/bg.jpg") repeat;
     font-family: "Segoe UI Black", serif;
     overflow-x: hidden;
 }
@@ -68,10 +69,6 @@ article {
 
 .green-content {
     background: #b2bb47;
-}
-
-.full-content {
-    background: url("../img/bg.jpg") repeat;
 }
 
 .main-content {
