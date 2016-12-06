@@ -52,9 +52,17 @@ var tab = $('#myTab');
 tab.find('> li:nth-child(' + 1 + ')').find('a').tab('show');
 drawChart([90, 85, 70, 65, 60, 55, 20]);
 
+var previousTab = null;
 $(function () {
     $('.nav-tabs a').click(function (e) {
-        switch ($(this).text()) {
+        if (previousTab != null) {
+            previousTab.css("color", "grey");
+        }
+        var currentTab = $(this);
+        currentTab.css("color", "green");
+        previousTab = currentTab;
+        
+        switch (currentTab.text()) {
             case "Wanga-R":
                 drawChart([90, 85, 70, 65, 60, 55, 20]);
                 break;
