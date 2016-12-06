@@ -58,6 +58,10 @@ h2 {
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
+article > h4, article > h5 {
+    color: green;
+}
+
 h4, h5 {
     text-align: center;
 }
