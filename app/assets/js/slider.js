@@ -20,10 +20,16 @@ var tabChange = function () {
 tabChange();
 var tabCycle = setInterval(tabChange, 5000);
 
+var previousLink = null;
 $(function () {
     $('.nav-tabs a').click(function (e) {
+        if (previousLink != null) {
+            previousLink.css("color", "grey");
+        }
         var link = $(this);
-        link.css({ opacity: 0 });
+        link.css("color", "green");
+        link.css({ opacity: 0});
+        previousLink = link;
         tabContent.css({ opacity: 0 });
         e.preventDefault();
         clearInterval(tabCycle);
